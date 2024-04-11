@@ -6,6 +6,8 @@
     <title>ToDoTeam</title>
 </head>
 <body>
-    
+    <?
+        echo "Just Checking."
+    ?>
 </body>
 </html>
