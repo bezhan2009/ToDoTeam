@@ -13,8 +13,8 @@
 
 <body>
     <?
-        name = $_POST['name']
-        if name {
+        $name = $_POST['name']
+        if $name {
             echo "Hello, $name";
         }
         else {
