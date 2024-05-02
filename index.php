@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>ToDoTeam</title>
 </head>
-    <form action="">
-        <input type="text" name="name">
-        <button>Say Hello</button>
-    </form>
-
 
 <body>
-    <?
-        $name = $_POST['name']
-        if $name {
-            echo "Hello, $name";
-        }
-        else {
-            echo "Please enter your name";
-        }
-    ?>
+    <div align="center" class="main">
+        <h1>
+            <?php
+                echo "Здравствуйте уважаемый пользователь!<br>";
+                echo "Вы вошли на сайт ToDoTeam!<br>";
+                echo "Ваше время и дата: ". date("H:i:s d.m.Y"). "<br>";
+                echo "На данный момент мы не можем предоставить вам функционал<br>нашего проекта из за того что мы пока не начали активно разрабатывать приложения ToDoTeam :("
+            ?>
+        </h1>
+    </div>
 </body>
 </html>
