@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/create-profile.css" rel="stylesheet">
-    <title>Create profile</title>
-</head>
-<body>
-    <header>
-        <nav></nav>
-    </header>
-    <main>
 
-        <form>
-            <fieldset class="create-profile">
-                <h1>Создайте свой профиль</h1>
-                <input type="file" class="avatar" name="avatar" accept="image/png, image/jpeg" />
-                First name:<br>
-                <input type='text' name='firstname' value=''><br>
-                Last name:<br>
-                <input type='text' name='lastname' value=''><br><br>
-                <h2>Select your skills</h2>
-                <label id="skill-select-label" style="display:block;">Multi Select Plugin Dropdown</label>
-                <div id="skill-select" aria-labeledby="skill-select-label">
-                  <ul>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="selected" value="0"/>
-                        Front-end
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="selected" value="1"/>
-                        Back-end
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="selected" value="2"/>
-                        Full-stack
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" name="selected" value="3"/>
-                        Design
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-                <input type='submit' value='Create'>
-            </fieldset>
-        </form>
-    </main>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/create-profile.css" rel="stylesheet">
+  <title>Create profile</title>
+</head>
+
+<body>
+  <header>
+    <nav>1</nav>
+  </header>
+  <main>
+
+    <form>
+      <fieldset class="create-profile">
+        <h1>Создайте свой профиль</h1>
+        <input type="file" class="avatar" name="avatar" accept="image/png, image/jpeg" />
+        First name:<br>
+        <input type='text' name='firstname' value=''><br>
+        Last name:<br>
+        <input type='text' name='lastname' value=''><br><br>
+        <h2>Select your skills</h2>
+        <label id="skill-select-label" style="display:block;">Multi Select Plugin Dropdown</label>
+        <div id="skill-select" aria-labeledby="skill-select-label">
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="selected" value="0" />
+                Front-end
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="selected" value="1" />
+                Back-end
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="selected" value="2" />
+                Full-stack
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="selected" value="3" />
+                Design
+              </label>
+            </li>
+          </ul>
+        </div>
+        <input type='submit' value='Create'>
+      </fieldset>
+    </form>
+  </main>
 </body>
 <script src="script.js"></script>
+
 </html>
