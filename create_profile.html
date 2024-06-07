@@ -10,54 +10,67 @@
 </head>
 
 <body>
-  <header>
-    <nav>1</nav>
-  </header>
-  <main>
+    <header>
+        <nav>
+          <a href="#"><h2 class="main-page-link">Main page</h2></a>
+          <a href="#"><h2 class="search-team-link">Search team</h2></a>
+          <a href="#"><h2 class="log-in-link">Log in</h2></a>
+        </nav>
+    </header>
+    <main>
 
-    <form>
-      <fieldset class="create-profile">
-        <h1>Создайте свой профиль</h1>
-        <input type="file" class="avatar" name="avatar" accept="image/png, image/jpeg" />
-        First name:<br>
-        <input type='text' name='firstname' value=''><br>
-        Last name:<br>
-        <input type='text' name='lastname' value=''><br><br>
-        <h2>Select your skills</h2>
-        <label id="skill-select-label" style="display:block;">Multi Select Plugin Dropdown</label>
-        <div id="skill-select" aria-labeledby="skill-select-label">
-          <ul>
-            <li>
-              <label>
-                <input type="checkbox" name="selected" value="0" />
-                Front-end
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="selected" value="1" />
-                Back-end
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="selected" value="2" />
-                Full-stack
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="selected" value="3" />
-                Design
-              </label>
-            </li>
-          </ul>
-        </div>
-        <input type='submit' value='Create'>
-      </fieldset>
-    </form>
-  </main>
+        <form>
+            <fieldset class="create-profile">
+                <h1>Создайте свой профиль</h1>
+                <form method="post" enctype="multipart/form-data">
+                  <div>
+                    <label for="image_uploads" class="avatar-label">Choose your avatar (PNG, JPG)</label>
+                    <input
+                      type="file"
+                      id="image_uploads"
+                      name="image_uploads"
+                      accept=".jpg, .jpeg, .png"
+                      multiple
+                      hidden />
+                  </div>
+                </form>
+                <h3 class="input-text">First name</h3>
+                <input type='text' name='firstname' class="firstname" value=''><br>
+                <h3 class="input-text">Last name</h3>
+                <input type='text' name='lastname' class="lastname" value=''><br><br>
+                <h2 class="select-skill-label">Select your skills</h2>
+                <div>
+                  <ul class="select-skill-list">
+                    <li>
+                      <label class="select-skill-item">
+                        <input type="checkbox" name="selected" value="0"/>
+                        Front-end
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-skill-item">
+                        <input type="checkbox" name="selected" value="1"/>
+                        Back-end
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-skill-item">
+                        <input type="checkbox" name="selected" value="2"/>
+                        Full-stack
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-skill-item">
+                        <input type="checkbox" name="selected" value="3"/>
+                        Design
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <button class="create-button">Create</button>
+            </fieldset>
+        </form>
+    </main>
 </body>
-<script src="script.js"></script>
-
+<script src="create_profile.js"></script>
 </html>
