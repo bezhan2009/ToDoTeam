@@ -22,6 +22,7 @@ nav {
     height: 40px;
     background-color: white;
     display: flex;
+    border-bottom: 1px solid black;
 }
 
 nav a {
